@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="brd_e.m_t_anagram.Game">
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentTop = "true"
+		android:layout_toEndOf = "@+id/t1"
+		android:id = "@+id/t2"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/t1"
+		android:layout_alignParentTop = "true"
+		android:layout_toEndOf = "@+id/t0"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"
+		/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/t3"
+		android:layout_alignParentTop = "true"
+		android:layout_toEndOf = "@+id/t2"
+		android:onClick="onClicktoggle"
+		android:checked = "false"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/t5"
+		android:layout_alignBaseline = "@+id/t4"
+		android:layout_alignBottom = "@+id/t4"
+		android:layout_toEndOf = "@+id/t4"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t2"
+		android:layout_toEndOf = "@+id/t5"
+		android:id = "@+id/t6"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t3"
+		android:layout_toEndOf = "@+id/t6"
+		android:id = "@+id/t7"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t4"
+		android:layout_alignStart = "@+id/t4"
+		android:id = "@+id/t8"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t5"
+		android:layout_toEndOf = "@+id/t8"
+		android:id = "@+id/t9"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t6"
+		android:layout_toEndOf = "@+id/t9"
+		android:id = "@+id/ta"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t7"
+		android:layout_toEndOf = "@+id/ta"
+		android:id = "@+id/tb"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<Button
+		android:text = "Submit"
+		android:layout_height = "wrap_content"
+		android:layout_marginBottom = "10dp"
+		android:id = "@+id/submit"
+		android:background = "@android:color/holo_orange_dark"
+		android:onClick="onClicksubmit"
+		android:layout_alignParentBottom = "true"
+		android:layout_centerHorizontal = "true"
+		android:layout_width = "match_parent"
+		/>
+
+	<TextView
+		android:text = "00"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/score"
+		android:digits = "3"
+		android:textSize = "30sp"
+		android:layout_above = "@+id/submit"
+		android:layout_alignParentStart = "true"
+		android:backgroundTint="@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t8"
+		android:layout_alignStart = "@+id/t8"
+		android:id = "@+id/tc"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/t9"
+		android:layout_toEndOf = "@+id/tc"
+		android:id = "@+id/td"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/tb"
+		android:layout_toEndOf = "@+id/te"
+		android:id = "@+id/tf"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<EditText
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:inputType = "none|textCapCharacters|textCapWords|textPersonName"
+		android:ems = "10"
+		android:id = "@+id/userText"
+		android:textStyle = "normal|bold"
+		tools:text = "Enter your guess here..."
+		android:textSize = "18sp"
+		android:layout_centerVertical = "true"
+		android:layout_centerHorizontal = "true"
+		android:cursorVisible = "false"
+		android:clickable = "false"
+		android:textColorLink = "@android:color/holo_orange_dark"
+		android:focusable = "false"
+		android:focusableInTouchMode = "false"
+		android:capitalize = "characters"
+		android:backgroundTint = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/t4"
+		android:layout_below = "@+id/t0"
+		android:layout_alignStart = "@+id/t0"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/t0"
+		android:layout_marginStart = "11dp"
+		tools:text = "@+id/t0"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"
+		android:layout_alignParentTop = "true"
+		android:layout_alignParentStart = "true"
+		android:cursorVisible = "false"/>
+
+	<ToggleButton
+		android:text = "ToggleButton"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/te"
+		android:visibility = "visible"
+		android:onClick="onClicktoggle"
+		android:background = "@android:color/holo_orange_dark"
+		android:layout_alignBaseline = "@+id/td"
+		android:layout_alignBottom = "@+id/td"
+		android:layout_toEndOf = "@+id/t9"/>
+
+</RelativeLayout>
